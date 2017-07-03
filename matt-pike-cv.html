@@ -6,14 +6,16 @@
 		<meta name="keywords" content="Matt Pike,CV,currriculum vitae,resume,developer,software,web,PHP">
 		<meta name="author" content="Matt Pike">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/base-min.css">
-		<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-min.css">
-		<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+		<link rel="stylesheet" href="css/purecss@1.0.0/build/base-min.css">
+		<link rel="stylesheet" href="css/purecss@1.0.0/build/grids-min.css">
+		<link rel="stylesheet" href="css/purecss@1.0.0/build/grids-responsive-min.css">
 		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Raleway" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="VerticalTimeline/css/default.css">
 		<link rel="stylesheet" type="text/css" href="VerticalTimeline/css/component.css">
 		<link rel="stylesheet" type="text/css" href="css/main.css">
-		<script src="js/modernizr.custom.js"></script>
+		<script src="VerticalTimeline/js/modernizr.custom.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="js/readMore.js"></script>
 	</head>
 	<body>
 		<div class="pure-g">
@@ -21,289 +23,242 @@
 				<h1>Matthew Pike - Curriculum Vitae</h1>
 				<h2>Introduction</h2>
 
-				<p>I'm a full-stack developer with over 10 years experience and a passion for problem solving, creative thinking, and self-development.</p>
+				<p>I'm a full-stack developer with over 10 years experience and a passion for problem solving, creative thinking, and self-development. <button data-type="viewMoreButton" data-context="TODO">Read more</button></p>
 
 				<p class="additionalInfo">I am constantly striving to improve my skills by learning from figure heads in the industry whilst also drawing on personal experience working on everything from company websites to accounting and salary systems.</p>
 				<p class="additionalInfo">With every piece of work I produce I try to consider the user experience, security, maintainability, performance and accessibility for different types of users and clients whilst automating the process as much as possible.</p>
-				<p><button data-type="viewMoreButton">View more</button></p>
+
+				<h2>Job history</h2>
+				<ol reversed class="cbp_tmtimeline">
+					<li>
+						<time class="cbp_tmtime" datetime="2011-10-01">2011 - Now</time>
+						<div class="cbp_tmicon cbp_tmicon-screen"></div>
+						<div class="cbp_tmlabel">
+							<h3>Lead developer - Nepton Oy</h3>
+							<ul>
+								<li>Responsible for overseeing development standards and training junior developers</li>
+								<li>Responsible for the business's core product, a time recording and salary calculation system</li>
+								<li>Changes I spearheaded to benefit the business:
+									<ul>
+										<li>Automated testing - previously manual testing took one week for 5 developers (~180 wasted developer hours) <em>every month</em> and often missed many bugs and delayed releases. Today there are over 4000 use cases automatically tested with over 60000 assertions. No week of manual testing required, testing can be now be completed in 5 minutes.</li>
+                                        <li class="additionalInfo">Designed and re-wrote core salary calculation engine to meet increasingly demanding customer requirements. With over 10 years focused development prior to that, 3000+ settings and thousands of use cases this wouldn't have been possible to complete successfully in under 3 months if it weren't for the excellent automated test and documentation coverage we had built from scratch.</li>
+										<li class="additionalInfo">Automated builds - I standardised and automated the release packages and deployment scripts with Jenkinks and Apache Ant so we could release to more servers, more frequently, with less work, less downtime and fewer errors</li>
+										<li class="additionalInfo">Continuous integration/agile development - the sooner fixes and enhancements are merged and released, the happier customers and developers will be</li>
+									    <li><button data-type="viewMoreButton" data-context="TODO">Read more about work at Nepton</button></li>
+                                    </ul>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<time class="cbp_tmtime" datetime="2006-10-01">2006 - 2011</time>
+						<div class="cbp_tmicon cbp_tmicon-screen"></div>
+						<div class="cbp_tmlabel">
+							<h3>Lead developer - Strategies Ltd</h3>
+							<ul>
+								<li class="additionalInfo">Responsible for overseeing development standards and training junior developers</li>
+								<li class="additionalInfo">Solely responsible for developing a web-based accounting system in PHP including prototyping and unit testing</li>
+								<li class="additionalInfo">Devloped many business websites on Joomla, Wordpress, Symphony, Zend Framework</li>
+								<li class="additionalInfo">Built e-commerce websites using osCommerce and VirtueMart</li>
+								<li class="additionalInfo">Helped with search engine optimisation</li>
+								<li><button data-type="viewMoreButton" data-context="TODO">Read more about work at Strategies</button></li>
+							</ul>
+						</div>
+					</li>
+					<li class="additionalInfo">
+						<time class="cbp_tmtime" datetime="2005-06-01">2005 part-time</time>
+						<div class="cbp_tmicon cbp_tmicon-screen"></div>
+						<div class="cbp_tmlabel">
+							<h3>Freelancing, <abbr title="United Kingdom">U.K.</abbr></h3>
+							<ul>
+								<li>Part-time work designing and developing websites for local businesses whilst studying at University.</li>
+							</ul>
+						</div>
+					</li>
+					<li class="readMoreListItem">
+						<div class="cbp_tmicon" data-type="viewMoreButton" data-context="TODO">&hellip;</div>
+						<button data-type="viewMoreButton" data-context="TODO">Read more job history</button>
+					</li>
+				</ol>
 
 				<h2>Education</h2>
 				<ol reversed class="cbp_tmtimeline">
 					<li>
-						<time class="cbp_tmtime" datetime="2003-09-01">2000 &dash; 2003</time>
-						<div class="cbp_tmicon cbp_tmicon-phone"></div>
+						<time class="cbp_tmtime" datetime="2003-09-01">2003 - 2006</time>
+						<div class="cbp_tmicon cbp_tmicon-earth"></div>
 						<div class="cbp_tmlabel">
-							<h3>University of Portsmouth</h3>
-							<p><abbr title="Bachelor of Science">BSc</abbr> Internet technology - First class honours degree</p>
+							<h3><abbr title="Bachelor of Science">BSc</abbr> Internet technology - First class honours degree</h3>
+							<p>University of Portsmouth, United Kingdom</p>
 						</div>
 					</li>
 					<li class="additionalInfo">
-						<h3>Fareham college <sup>(2000 - 2003)</sup></h3>
-						<ul>
-							<li>A-level in Computing</li>
-							<li>A-level in Electronics</li>
-							<li>AS-level in Graphics</li>
-							<li>AS-level in Physics</li>
-							<li>AS-level in <abbr title="Information communication technology">ICT</abbr></li>
-						</ul>
+						<time class="cbp_tmtime" datetime="2000-09-01">2000 - 2003</time>
+						<div class="cbp_tmicon cbp_tmicon-earth"></div>
+						<div class="cbp_tmlabel">
+							<h3><abbr title="Advanced">A</abbr>+<abbr title="Advanced subsidiary">AS</abbr>-levels in Computing, Electronics, Graphics, Physics, <abbr title="Information communication technology">ICT</abbr></h3>
+							<p>Fareham College, United Kingdom</p>
+						</div>
 					</li>
 					<li class="additionalInfo">
-						<h3>Brookfield secondary school <sup>(1995 - 2000)</sup></h3>
-						<ul>
-							<li>9 GCSE's (A-C)</li>
-						</ul>
+						<time class="cbp_tmtime" datetime="1995-09-01">1995 - 2000</time>
+						<div class="cbp_tmicon cbp_tmicon-earth"></div>
+						<div class="cbp_tmlabel">
+							<h3>9 <abbr title="General certificate of secondary education">GCSE</abbr>'s (A-C)</h3>
+							<p>Brookfield secondary school, United Kingdom</p>
+						</div>
 					</li>
-					<li><button data-type="viewMoreButton">View more</button></li>
+					<li class="readMoreListItem">
+						<div class="cbp_tmicon" data-type="viewMoreButton" data-context="TODO">&hellip;</div>
+						<button data-type="viewMoreButton" data-context="TODO">Read more education history</button>
+					</li>
 				</ol>
-				<h2>Job history</h2>
-				<ol reversed>
-					<li>
-						<h3>Lead developer - Nepton Oy <sup>(2011 - present)</sup></h3>
-						<ul>
-							<li>Responsible for overseeing development standards and training junior developers</li>
-							<li>Responsible for the business's core product, a flexible time recording and salary calculation system to support the large number of <abbr title="Ty�ehtosopimus">TES</abbr> legislation and salary integrations in Finland and abroad.</li>
-							<li>Changes I spearheaded to benefit the business:
-								<ul>
-									<li>Automated testing - previously manual testing took one week for 5 developers (~180 wasted developer hours) <em>every month</em> and often missed many bugs and delayed releases. Today there is over 4000 use cases automatically tested with over 60000 assertions. No week of manual testing required, testing can be now be completed in 5 minutes.</li>
-									<li>Automated builds - I standardised and automated the release packages and deployment scripts with Jenkinks and Apache Ant so we could release to more servers, more frequently, with less work, less downtime and fewer errors</li>
-									<li>Continuous integration/agile development - the sooner fixes and enhancements are merged and released, the happier customers and developers will be</li>
-									<li>Designed and re-wrote core salary calculation engine to meet increasingly demanding customer requirements. With over 10 years focused development prior to that, 3000+ settings and thousands of use cases this wouldn't have been possible to complete successfully in under 3 months if it weren't for the excellent automated test and documentation coverage we had built from scratch.</li>
-								</ul>
-							</li>
-						</ul>
-					</li>
-					<li class="additionalInfo">
-						<h3>Lead developer - Strategies Ltd <sup>(2006 - 2011)</sup></h3>
-						<ul>
-							<li>Responsible for overseeing development standards and training junior developers</li>
-							<li>Solely responsible for developing a web-based accounting system in PHP including prototyping and unit testing</li>
-							<li>Devloped many business websites on Joomla, Wordpress, Symphony, Zend Framework</li>
-							<li>Built e-commerce websites using osCommerce and VirtueMart</li>
-							<li>Helped with search engine optimisation</li>
-						</ul>
-					</li>
-					<li class="additionalInfo">
-						<h3>Freelancing <sup>(2005 - 2006)</sup></h3>
-						<ul>
-							<li>Part-time work designing and developing websites for local businesses whilst studying at University</li>
-						</ul>
-					</li>
-					<li><button data-type="viewMoreButton">View more</button></li>
-				</ol>
-
-
-					<ul class="cbp_tmtimeline">
-						<li>
-							<time class="cbp_tmtime" datetime="2013-04-10 18:30"><span>4/10/13</span> <span>18:30</span></time>
-							<div class="cbp_tmicon cbp_tmicon-phone"></div>
-							<div class="cbp_tmlabel">
-								<h2>Ricebean black-eyed pea</h2>
-								<p>Winter purslane courgette pumpkin quandong komatsuna fennel green bean cucumber watercress. Pea sprouts wattle seed rutabaga okra yarrow cress avocado grape radish bush tomato ricebean black-eyed pea maize eggplant. Cabbage lentil cucumber chickpea sorrel gram garbanzo plantain lotus root bok choy squash cress potato summer purslane salsify fennel horseradish dulse. Winter purslane garbanzo artichoke broccoli lentil corn okra silver beet celery quandong. Plantain salad beetroot bunya nuts black-eyed pea collard greens radish water spinach gourd chicory prairie turnip avocado sierra leone bologi.</p>
-							</div>
-						</li>
-						<li>
-							<time class="cbp_tmtime" datetime="2013-04-11T12:04"><span>4/11/13</span> <span>12:04</span></time>
-							<div class="cbp_tmicon cbp_tmicon-screen"></div>
-							<div class="cbp_tmlabel">
-								<h2>Greens radish arugula</h2>
-								<p>Caulie dandelion maize lentil collard greens radish arugula sweet pepper water spinach kombu courgette lettuce. Celery coriander bitterleaf epazote radicchio shallot winter purslane collard greens spring onion squash lentil. Artichoke salad bamboo shoot black-eyed pea brussels sprout garlic kohlrabi.</p>
-							</div>
-						</li>
-						<li>
-							<time class="cbp_tmtime" datetime="2013-04-13 05:36"><span>4/13/13</span> <span>05:36</span></time>
-							<div class="cbp_tmicon cbp_tmicon-mail"></div>
-							<div class="cbp_tmlabel">
-								<h2>Sprout garlic kohlrabi</h2>
-								<p>Parsnip lotus root celery yarrow seakale tomato collard greens tigernut epazote ricebean melon tomatillo soybean chicory broccoli beet greens peanut salad. Lotus root burdock bell pepper chickweed shallot groundnut pea sprouts welsh onion wattle seed pea salsify turnip scallion peanut arugula bamboo shoot onion swiss chard. Avocado tomato peanut soko amaranth grape fennel chickweed mung bean soybean endive squash beet greens carrot chicory green bean. Tigernut dandelion sea lettuce garlic daikon courgette celery maize parsley komatsuna black-eyed pea bell pepper aubergine cauliflower zucchini. Quandong pea chickweed tomatillo quandong cauliflower spinach water spinach.</p>
-							</div>
-						</li>
-						<li>
-							<time class="cbp_tmtime" datetime="2013-04-15 13:15"><span>4/15/13</span> <span>13:15</span></time>
-							<div class="cbp_tmicon cbp_tmicon-phone"></div>
-							<div class="cbp_tmlabel">
-								<h2>Watercress ricebean</h2>
-								<p>Peanut gourd nori welsh onion rock melon mustard j�cama. Desert raisin amaranth kombu aubergine kale seakale brussels sprout pea. Black-eyed pea celtuce bamboo shoot salad kohlrabi leek squash prairie turnip catsear rock melon chard taro broccoli turnip greens. Fennel quandong potato watercress ricebean swiss chard garbanzo. Endive daikon brussels sprout lotus root silver beet epazote melon shallot.</p>
-							</div>
-						</li>
-						<li>
-							<time class="cbp_tmtime" datetime="2013-04-16 21:30"><span>4/16/13</span> <span>21:30</span></time>
-							<div class="cbp_tmicon cbp_tmicon-earth"></div>
-							<div class="cbp_tmlabel">
-								<h2>Courgette daikon</h2>
-								<p>Parsley amaranth tigernut silver beet maize fennel spinach. Ricebean black-eyed pea maize scallion green bean spinach cabbage j�cama bell pepper carrot onion corn plantain garbanzo. Sierra leone bologi komatsuna celery peanut swiss chard silver beet squash dandelion maize chicory burdock tatsoi dulse radish wakame beetroot.</p>
-							</div>
-						</li>
-						<li>
-							<time class="cbp_tmtime" datetime="2013-04-17 12:11"><span>4/17/13</span> <span>12:11</span></time>
-							<div class="cbp_tmicon cbp_tmicon-screen"></div>
-							<div class="cbp_tmlabel">
-								<h2>Greens radish arugula</h2>
-								<p>Caulie dandelion maize lentil collard greens radish arugula sweet pepper water spinach kombu courgette lettuce. Celery coriander bitterleaf epazote radicchio shallot winter purslane collard greens spring onion squash lentil. Artichoke salad bamboo shoot black-eyed pea brussels sprout garlic kohlrabi.</p>
-							</div>
-						</li>
-						<li>
-							<time class="cbp_tmtime" datetime="2013-04-18 09:56"><span>4/18/13</span> <span>09:56</span></time>
-							<div class="cbp_tmicon cbp_tmicon-phone"></div>
-							<div class="cbp_tmlabel">
-								<h2>Sprout garlic kohlrabi</h2>
-								<p>Parsnip lotus root celery yarrow seakale tomato collard greens tigernut epazote ricebean melon tomatillo soybean chicory broccoli beet greens peanut salad. Lotus root burdock bell pepper chickweed shallot groundnut pea sprouts welsh onion wattle seed pea salsify turnip scallion peanut arugula bamboo shoot onion swiss chard. Avocado tomato peanut soko amaranth grape fennel chickweed mung bean soybean endive squash beet greens carrot chicory green bean. Tigernut dandelion sea lettuce garlic daikon courgette celery maize parsley komatsuna black-eyed pea bell pepper aubergine cauliflower zucchini. Quandong pea chickweed tomatillo quandong cauliflower spinach water spinach.</p>
-							</div>
-						</li>
-					</ul>
 			</main>
 			<aside class="pure-u-md-2-5">
+				<address>print | pdf | twitter | github | contact</address>
 				<h2>Skills</h2>
 
 				<h3>Software languages</h3>
 				<ul>
 					<li>
-						<meter min="0" max="3" value="3" low="1" medium="2" optimum="3">Advanced level</meter>
+						<meter min="0" max="3" value="3" low="1" optimum="3">Advanced level</meter>
 						<abbr title="PHP hypertext processor">PHP</abbr>
 					</li>
 					<li>
-						<meter min="0" max="3" value="3" low="1" medium="2" optimum="3">Advanced level</meter>
+						<meter min="0" max="3" value="3" low="1" optimum="3">Advanced level</meter>
 						<abbr title="Hyper text markup language">HTML</abbr>, <abbr title="Extensible hyper text markup language">XHTML</abbr>, and <abbr title="Extensible markup language">XML</abbr>
 					</li>
 					<li>
-						<meter min="0" max="3" value="3" low="1" medium="2" optimum="3">Advanced level</meter>
+						<meter min="0" max="3" value="3" low="1" optimum="3">Advanced level</meter>
 						<abbr title="Cascading style sheets">CSS</abbr>
 					</li>
 					<li>
-						<meter min="0" max="3" value="3" low="1" medium="2" optimum="3">Advanced level</meter>
+						<meter min="0" max="3" value="2" low="1" optimum="3">Intermediate-Advanced level</meter>
 						JavaScript
 					</li>
 					<li>
-						<meter min="0" max="3" value="3" low="1" medium="2" optimum="3">Advanced level</meter>
+						<meter min="0" max="3" value="3" low="1" optimum="3">Advanced level</meter>
 						MySQL
 					</li>
 					<li class="additionalInfo">
-						<meter min="0" max="3" value="2" low="1" medium="2" optimum="3">Advanced level</meter>
+						<meter min="0" max="3" value="2" low="1" optimum="3">Advanced level</meter>
 						<abbr title="Simple object access protocol">SOAP</abbr> and <abbr title="Web service definition layer">WSDL</abbr>
 					</li>
 					<li class="additionalInfo">
-						<meter min="0" max="3" value="2" low="1" medium="2" optimum="3">Intermediate level</meter>
+						<meter min="0" max="3" value="2" low="1" optimum="3">Intermediate level</meter>
 						<abbr title="C Sharp">C#</abbr>
 					</li>
 					<li class="additionalInfo">
-						<meter min="0" max="3" value="2" low="1" medium="2" optimum="3">Intermediate level</meter>
+						<meter min="0" max="3" value="2" low="1" optimum="3">Intermediate level</meter>
 						<abbr title="Microsoft SQL server">MSSQL</abbr>, SQLite
 					</li>
 					<li class="additionalInfo">
-						<meter min="0" max="3" value="2" low="1" medium="2" optimum="3">Intermediate but rusty</meter>
+						<meter min="0" max="3" value="2" low="1" optimum="3">Intermediate but rusty</meter>
 						Java
 					</li>
 					<li class="additionalInfo">
-						<meter min="0" max="3" value="1" low="1" medium="2" optimum="3">Beginner/rusty level</meter>
+						<meter min="0" max="3" value="1" low="1" optimum="3">Beginner/rusty level</meter>
 						<abbr title="C programming language">C</abbr>, <abbr title="C programming language">C++</abbr>
 					</li>
 					<li class="additionalInfo">
-						<meter min="0" max="3" value="1" low="1" medium="2" optimum="3">Beginner/rusty level</meter>
+						<meter min="0" max="3" value="1" low="1" optimum="3">Beginner/rusty level</meter>
 						<abbr title="Externsible stylesheet language transformations">XSLT</abbr>
 					</li>
-					<li><button data-type="viewMoreButton">View more</button></li>
+					<li><button data-type="viewMoreButton" data-context="TODO">View more</button></li>
 				</ul>
-				<h3>Frameworks &amp; libraries</h3>
+				<!-- <h3>Frameworks &amp; libraries</h3>
 				<ul>
 					<li>
-						<meter min="0" max="3" value="3" low="1" medium="2" optimum="3">Advanced level</meter>
+						<meter min="0" max="3" value="3" low="1" optimum="3">Advanced level</meter>
 						PHPUnit, Composer, Lint, Phing etc
 					</li>
 					<li>
-						<meter min="0" max="3" value="3" low="1" medium="2" optimum="3">Advanced level</meter>
+						<meter min="0" max="3" value="3" low="1" optimum="3">Advanced level</meter>
 						jQuery, <abbr title="My object oriented tools">MooTools</abbr>
 					</li>
 					<li>
-						<meter min="0" max="3" value="2" low="1" medium="2" optimum="3">Intermediate level</meter>
+						<meter min="0" max="3" value="2" low="1" optimum="3">Intermediate level</meter>
 						Zend framework, Zend Expressive, Symfony
 					</li>
 					<li>
-						<meter min="0" max="3" value="2" low="1" medium="2" optimum="3">Intermediate level</meter>
+						<meter min="0" max="3" value="2" low="1" optimum="3">Intermediate level</meter>
 						Wordpress, Joomla, Symphony <abbr title="Content management system">CMS</abbr>
 					</li>
 					<li class="additionalInfo">
-						<meter min="0" max="3" value="2" low="1" medium="2" optimum="3">Intermediate level</meter>
+						<meter min="0" max="3" value="2" low="1" optimum="3">Intermediate level</meter>
 						Twig
 					</li>
 					<li class="additionalInfo">
-						<meter min="0" max="3" value="2" low="1" medium="2" optimum="3">Intermediate level</meter>
+						<meter min="0" max="3" value="2" low="1" optimum="3">Intermediate level</meter>
 						Unity
 					</li>
 					<li class="additionalInfo">
-						<meter min="0" max="3" value="1" low="1" medium="2" optimum="3">Beginner/rusty level</meter>
+						<meter min="0" max="3" value="1" low="1" optimum="3">Beginner/rusty level</meter>
 						Node
 					</li>
-					<li><button data-type="viewMoreButton">View more</button></li>
+					<li><button data-type="viewMoreButton" data-context="TODO">View more</button></li>
 
-				</ul>
+				</ul>-->
 				<h3>Workflow</h3>
 				<ul>
 					<li>
-						<meter min="0" max="3" value="3" low="1" medium="2" optimum="3">Advanced level</meter>
-						Automated testing - PHPUnit, Selenium
+						<meter min="0" max="3" value="3" low="1" optimum="3">Advanced level</meter>
+						Automated testing<span class="additionalInfo"> - PHPUnit, Selenium</span>
 					</li>
 					<li>
-						<meter min="0" max="3" value="3" low="1" medium="2" optimum="3">Advanced level</meter>
-						Build and deployment - Jenkins, Phing, Apache Ant
+						<meter min="0" max="3" value="3" low="1" optimum="3">Advanced level</meter>
+						Build and deployment<span class="additionalInfo"> - Jenkins, Phing, Apache Ant</span>
 					</li>
 					<li>
-						<meter min="0" max="3" value="3" low="1" medium="2" optimum="3">Advanced level</meter>
-						Source control - Git (gitflow), <abbr title="Subversion">SVN</abbr>, Vault
+						<meter min="0" max="3" value="3" low="1" optimum="3">Advanced level</meter>
+						Source control<span class="additionalInfo"> - Git (gitflow), <abbr title="Subversion">SVN</abbr>, Vault</span>
 					</li>
 					<li>
-						<meter min="0" max="3" value="3" low="1" medium="2" optimum="3">Advanced level</meter>
-						Profiling - Xprofiler, Cache-grind
+						<meter min="0" max="3" value="3" low="1" optimum="3">Advanced level</meter>
+						Profiling+Debugging<span class="additionalInfo"> - Xprofiler, Xdebug, Cache-grind</span>
 					</li>
 					<li>
-						<meter min="0" max="3" value="3" low="1" medium="2" optimum="3">Advanced level</meter>
-						Debugging - Xdebug
+						<meter min="0" max="3" value="3" low="1" optimum="3">Advanced level</meter>
+						Validation<span class="additionalInfo"> - <abbr title="World wide web consortium">W3C</abbr> HTML validator, Clover, Lint</span>
 					</li>
 					<li>
-						<meter min="0" max="3" value="3" low="1" medium="2" optimum="3">Advanced level</meter>
-						Validation - <abbr title="World wide web consortium">W3C</abbr> HTML validator, Clover, Lint
+						<meter min="0" max="3" value="2" low="1" optimum="3">Advanced level</meter>
+						Graphical design<span class="additionalInfo"> - Paintshop, Photoshop</span>
 					</li>
 					<li>
-						<meter min="0" max="3" value="3" low="1" medium="2" optimum="3">Advanced level</meter>
-						Graphical design - Paintshop, Photoshop
+						<meter min="0" max="3" value="3" low="1" optimum="3">Advanced level</meter>
+						Prototyping and <abbr title="user experience">UX</abbr>	 design<span class="additionalInfo"> - Moqups, Fireworks, OneNote</span>
 					</li>
 					<li>
-						<meter min="0" max="3" value="3" low="1" medium="2" optimum="3">Advanced level</meter>
-						Prototyping and <abbr title="user experience">UX</abbr>	 design - Moqups, Fireworks, OneNote
+						<meter min="0" max="3" value="2" low="1" optimum="3">Advanced level</meter>
+						Project management<span class="additionalInfo"> - Gemini</span>
 					</li>
 					<li>
-						<meter min="0" max="3" value="3" low="1" medium="2" optimum="3">Advanced level</meter>
-						Project management - Gemini
+						<meter min="0" max="3" value="3" low="1" optimum="3">Advanced level</meter>
+						Accessibility<span class="additionalInfo"> - <abbr title="Object oriented programming">WCAG</abbr>, JAWS screen reader</span>
 					</li>
 					<li>
-						<meter min="0" max="3" value="3" low="1" medium="2" optimum="3">Advanced level</meter>
-						Accessibility - <abbr title="Object oriented programming">WCAG</abbr>, JAWS screen reader
+						<meter min="0" max="3" value="3" low="1" optimum="3">Advanced level</meter>
+						Security<span class="additionalInfo"> - <abbr title="Cross-site scripting">XSS</abbr>, <abbr title="Cross-site request forgery">CSRF</abbr>, session hijacking, <abbr title="Structured query language">SQL</abbr> injection, header injection etc</span>
 					</li>
 					<li>
-						<meter min="0" max="3" value="3" low="1" medium="2" optimum="3">Advanced level</meter>
-						Security - <abbr title="Cross-site scripting">XSS</abbr>, <abbr title="Cross-site request forgery">CSRF</abbr>, session hijacking, <abbr title="Structured query language">SQL</abbr> injection, header injection etc
+						<meter min="0" max="3" value="3" low="1" optimum="3">Advanced level</meter>
+						Agile development<span class="additionalInfo"> - Continuous integration, Scrum</span>
 					</li>
 					<li>
-						<meter min="0" max="3" value="3" low="1" medium="2" optimum="3">Advanced level</meter>
-						Agile development - Continuous integration, Scrum
+						<meter min="0" max="3" value="3" low="1" optimum="3">Advanced level</meter>
+						Design patterns<span class="additionalInfo"> - <abbr title="Object oriented programming">OOP</abbr>, <abbr title="Inversion of control">IOC</abbr>, <abbr title="Model view controller">MVC</abbr>, <abbr title="Dependency injection">DI</abbr>, functional programming etc</span>
 					</li>
 					<li>
-						<meter min="0" max="3" value="3" low="1" medium="2" optimum="3">Advanced level</meter>
-						Design patterns - <abbr title="Object oriented programming">OOP</abbr>, <abbr title="Inversion of control">IOC</abbr>, <abbr title="Model view controller">MVC</abbr>, <abbr title="Dependency injection">DI</abbr>, functional programming etc
+						<meter min="0" max="3" value="3" low="1" optimum="3">Advanced level</meter>
+						Documentation<span class="additionalInfo"> - Media Wiki, markdown</span>
 					</li>
 					<li>
-						<meter min="0" max="3" value="3" low="1" medium="2" optimum="3">Advanced level</meter>
-						Documentation - Media Wiki, markdown
+						<meter min="0" max="3" value="32" low="1" optimum="3">Advanced level</meter>
+						<abbr title="Search engine optimsation">SEO</abbr><span class="additionalInfo"> - Semantic markup, Google analytics, Facebook &amp; Twitter campaigns</span>
 					</li>
 					<li>
-						<meter min="0" max="3" value="32" low="1" medium="2" optimum="3">Advanced level</meter>
-						<abbr title="Search engine optimsation">SEO</abbr> - Semantic markup, Google analytics, Facebook &amp; Twitter campaigns
-					</li>
-					<li>
-						<meter min="0" max="3" value="2" low="1" medium="2" optimum="3">Intermediate level</meter>
-						<abbr title="PHP standard recommendation">PSR</abbr> PHP standards
-					</li>
-					<li>
-						<meter min="0" max="3" value="1" low="1" medium="2" optimum="3">Beginner/rusty level</meter>
-						Virtualisation - Vmware, Virtualbox, Docker
+						<meter min="0" max="3" value="1" low="1" optimum="3">Beginner/rusty level</meter>
+						Virtualisation<span class="additionalInfo"> - Vmware, Virtualbox, Docker</span>
 					</li>
 				</ul>
 				<h2>Hobbies &amp; interests</h2>
