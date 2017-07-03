@@ -22,14 +22,14 @@
 			<main class="pure-u-md-3-5">
 				<h1>Matthew Pike - Curriculum Vitae</h1>
 				<h2>Introduction</h2>
-
-				<p>I'm a full-stack developer with over 10 years experience and a passion for problem solving, creative thinking, and self-development. <button data-type="viewMoreButton" data-context="TODO">Read more</button></p>
-
-				<p class="additionalInfo">I am constantly striving to improve my skills by learning from figure heads in the industry whilst also drawing on personal experience working on everything from company websites to accounting and salary systems.</p>
-				<p class="additionalInfo">With every piece of work I produce I try to consider the user experience, security, maintainability, performance and accessibility for different types of users and clients whilst automating the process as much as possible.</p>
+                <div id="fullIntroduction">
+				    <p>I'm a full-stack developer with over 10 years experience and a passion for problem solving, creative thinking, and self-development. <button data-type="readMoreButton" data-context="fullIntroduction">Read more</button></p>
+					<p class="additionalInfo">I am constantly striving to improve my skills by learning from figure heads in the industry whilst also drawing on personal experience working on everything from company websites to accounting and salary systems.</p>
+					<p class="additionalInfo">With every piece of work I produce I try to consider the user experience, security, maintainability, performance and accessibility for different types of users and clients whilst automating the process as much as possible.</p>
+				</div>
 
 				<h2>Job history</h2>
-				<ol reversed class="cbp_tmtimeline">
+				<ol reversed class="cbp_tmtimeline" id="jobHistoryList">
 					<li>
 						<time class="cbp_tmtime" datetime="2011-10-01">2011 - Now</time>
 						<div class="cbp_tmicon cbp_tmicon-screen"></div>
@@ -39,12 +39,12 @@
 								<li>Responsible for overseeing development standards and training junior developers</li>
 								<li>Responsible for the business's core product, a time recording and salary calculation system</li>
 								<li>Changes I spearheaded to benefit the business:
-									<ul>
+									<ul id="neptonDetails">
 										<li>Automated testing - previously manual testing took one week for 5 developers (~180 wasted developer hours) <em>every month</em> and often missed many bugs and delayed releases. Today there are over 4000 use cases automatically tested with over 60000 assertions. No week of manual testing required, testing can be now be completed in 5 minutes.</li>
                                         <li class="additionalInfo">Designed and re-wrote core salary calculation engine to meet increasingly demanding customer requirements. With over 10 years focused development prior to that, 3000+ settings and thousands of use cases this wouldn't have been possible to complete successfully in under 3 months if it weren't for the excellent automated test and documentation coverage we had built from scratch.</li>
 										<li class="additionalInfo">Automated builds - I standardised and automated the release packages and deployment scripts with Jenkinks and Apache Ant so we could release to more servers, more frequently, with less work, less downtime and fewer errors</li>
 										<li class="additionalInfo">Continuous integration/agile development - the sooner fixes and enhancements are merged and released, the happier customers and developers will be</li>
-									    <li><button data-type="viewMoreButton" data-context="TODO">Read more about work at Nepton</button></li>
+									    <li><button data-type="readMoreButton" data-context="neptonDetails">Read more about work at Nepton</button></li>
                                     </ul>
 								</li>
 							</ul>
@@ -55,13 +55,13 @@
 						<div class="cbp_tmicon cbp_tmicon-screen"></div>
 						<div class="cbp_tmlabel">
 							<h3>Lead developer - Strategies Ltd</h3>
-							<ul>
+							<ul id="strategiesDetails">
 								<li class="additionalInfo">Responsible for overseeing development standards and training junior developers</li>
 								<li class="additionalInfo">Solely responsible for developing a web-based accounting system in PHP including prototyping and unit testing</li>
 								<li class="additionalInfo">Devloped many business websites on Joomla, Wordpress, Symphony, Zend Framework</li>
 								<li class="additionalInfo">Built e-commerce websites using osCommerce and VirtueMart</li>
 								<li class="additionalInfo">Helped with search engine optimisation</li>
-								<li><button data-type="viewMoreButton" data-context="TODO">Read more about work at Strategies</button></li>
+								<li><button data-type="readMoreButton" data-context="strategiesDetails">Read more about work at Strategies</button></li>
 							</ul>
 						</div>
 					</li>
@@ -76,13 +76,13 @@
 						</div>
 					</li>
 					<li class="readMoreListItem">
-						<div class="cbp_tmicon" data-type="viewMoreButton" data-context="TODO">&hellip;</div>
-						<button data-type="viewMoreButton" data-context="TODO">Read more job history</button>
+						<div class="cbp_tmicon">&hellip;</div>
+						<button data-type="readMoreButton" data-context="jobHistoryList">Read more job history</button>
 					</li>
 				</ol>
 
 				<h2>Education</h2>
-				<ol reversed class="cbp_tmtimeline">
+				<ol reversed class="cbp_tmtimeline" id="educationHistoryList">
 					<li>
 						<time class="cbp_tmtime" datetime="2003-09-01">2003 - 2006</time>
 						<div class="cbp_tmicon cbp_tmicon-earth"></div>
@@ -108,8 +108,8 @@
 						</div>
 					</li>
 					<li class="readMoreListItem">
-						<div class="cbp_tmicon" data-type="viewMoreButton" data-context="TODO">&hellip;</div>
-						<button data-type="viewMoreButton" data-context="TODO">Read more education history</button>
+                        <div class="cbp_tmicon">&hellip;</div>
+                        <button data-type="readMoreButton" data-context="educationHistoryList">Read more education history</button>
 					</li>
 				</ol>
 			</main>
@@ -118,7 +118,7 @@
 				<h2>Skills</h2>
 
 				<h3>Software languages</h3>
-				<ul>
+				<ul id="softwareLanguageList">
 					<li>
 						<meter min="0" max="3" value="3" low="1" optimum="3">Advanced level</meter>
 						<abbr title="PHP hypertext processor">PHP</abbr>
@@ -163,7 +163,7 @@
 						<meter min="0" max="3" value="1" low="1" optimum="3">Beginner/rusty level</meter>
 						<abbr title="Externsible stylesheet language transformations">XSLT</abbr>
 					</li>
-					<li><button data-type="viewMoreButton" data-context="TODO">View more</button></li>
+					<li><button data-type="readMoreButton" data-context="softwareLanguageList">Read more</button></li>
 				</ul>
 				<!-- <h3>Frameworks &amp; libraries</h3>
 				<ul>
@@ -195,11 +195,11 @@
 						<meter min="0" max="3" value="1" low="1" optimum="3">Beginner/rusty level</meter>
 						Node
 					</li>
-					<li><button data-type="viewMoreButton" data-context="TODO">View more</button></li>
+					<li><button data-type="readMoreButton" data-context="TODO">Read more</button></li>
 
 				</ul>-->
 				<h3>Workflow</h3>
-				<ul>
+				<ul id="workflowList">
 					<li>
 						<meter min="0" max="3" value="3" low="1" optimum="3">Advanced level</meter>
 						Automated testing<span class="additionalInfo"> - PHPUnit, Selenium</span>

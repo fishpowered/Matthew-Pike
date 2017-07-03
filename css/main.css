@@ -9,7 +9,7 @@ aside{background:#f5f5f5; padding:0 2em;}
 h1{color:#ee856c}
 main h2{color:#ccc; border-bottom:1px solid #eee}
 main p{color:#999}
-button{border:0; background:none; padding:0; border-bottom:2px dashed #bad5e4;}
+button{text-align:left; border:0; background:none; padding:0; border-bottom:2px dashed #bad5e4;}
 
 /* -- Tweaks to VerticalTimeline CSS -- */
 .cbp_tmlabel p{color:white}
