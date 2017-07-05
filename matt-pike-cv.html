@@ -9,7 +9,6 @@
 		<link rel="stylesheet" href="css/purecss@1.0.0/build/base-min.css">
 		<link rel="stylesheet" href="css/purecss@1.0.0/build/grids-min.css">
 		<link rel="stylesheet" href="css/purecss@1.0.0/build/grids-responsive-min.css">
-		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Raleway" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="VerticalTimeline/css/default.css">
 		<link rel="stylesheet" type="text/css" href="VerticalTimeline/css/component.css">
 		<link rel="stylesheet" type="text/css" href="css/main.css">
@@ -76,7 +75,7 @@
 						</div>
 					</li>
 					<li class="readMoreListItem">
-						<div class="cbp_tmicon">&hellip;</div>
+						<div class="cbp_tmicon textIcon">&hellip;</div>
 						<button data-type="readMoreButton" data-context="jobHistoryList">Read more job history</button>
 					</li>
 				</ol>
@@ -108,62 +107,136 @@
 						</div>
 					</li>
 					<li class="readMoreListItem">
-                        <div class="cbp_tmicon">&hellip;</div>
+                        <div class="cbp_tmicon textIcon">&hellip;</div>
                         <button data-type="readMoreButton" data-context="educationHistoryList">Read more education history</button>
 					</li>
 				</ol>
 			</main>
 			<aside class="pure-u-md-2-5">
-				<address>print | pdf | twitter | github | contact</address>
+				<address><a href="javascript:window.print()">print</a><!-- | pdf --> | <a href="http://twitter.com/fishpowered/">twitter</a> | <a href="http://github.com/fishpowered/">github</a> | <a href="javascript:alert('TODO')">contact</a></address>
 				<h2>Skills</h2>
-
-				<h3>Software languages</h3>
-				<ul id="softwareLanguageList">
+				<ul class="cbp_tmtimeline">
 					<li>
-						<meter min="0" max="3" value="3" low="1" optimum="3">Advanced level</meter>
-						<abbr title="PHP hypertext processor">PHP</abbr>
+						<h3 class="cbp_tmtime">Software languages</h3>
+						<div class="cbp_tmicon textIcon">&amp;</div>
+						<div class="cbp_tmlabel">
+							<ul id="softwareLanguageList" class="skillsList">
+								<li>
+									<meter min="0" max="3" value="3" low="1" optimum="3">Advanced level</meter>
+									<div><abbr title="PHP hypertext processor">PHP</abbr></div>
+								</li>
+								<li>
+									<meter min="0" max="3" value="3" low="1" optimum="3">Advanced level</meter>
+									<div><abbr title="Hyper text markup language">HTML</abbr>, <abbr title="Extensible hyper text markup language">XHTML</abbr>, and <abbr title="Extensible markup language">XML</abbr></div>
+								</li>
+								<li>
+									<meter min="0" max="3" value="3" low="1" optimum="3">Advanced level</meter>
+									<div><abbr title="Cascading style sheets">CSS</abbr></div>
+								</li>
+								<li>
+									<meter min="0" max="3" value="2" low="1" optimum="3">Intermediate-Advanced level</meter>
+									<div>JavaScript</div>
+								</li>
+								<li>
+									<meter min="0" max="3" value="3" low="1" optimum="3">Advanced level</meter>
+									<div>MySQL</div>
+								</li>
+								<li class="additionalInfo">
+									<meter min="0" max="3" value="2" low="1" optimum="3">Advanced level</meter>
+									<div><abbr title="Simple object access protocol">SOAP</abbr> and <abbr title="Web service definition layer">WSDL</abbr></div>
+								</li>
+								<li class="additionalInfo">
+									<meter min="0" max="3" value="2" low="1" optimum="3">Intermediate level</meter>
+									<div><abbr title="C Sharp">C#</abbr></div>
+								</li>
+								<li class="additionalInfo">
+									<meter min="0" max="3" value="2" low="1" optimum="3">Intermediate level</meter>
+									<div><abbr title="Microsoft SQL server">MSSQL</abbr>, SQLite</div>
+								</li>
+								<li class="additionalInfo">
+									<meter min="0" max="3" value="2" low="1" optimum="3">Intermediate but rusty</meter>
+									<div>Java</div>
+								</li>
+								<li class="additionalInfo">
+									<meter min="0" max="3" value="1" low="1" optimum="3">Beginner/rusty level</meter>
+									<div><abbr title="C programming language">C</abbr>, <abbr title="C programming language">C++</abbr></div>
+								</li>
+								<li class="additionalInfo">
+									<meter min="0" max="3" value="1" low="1" optimum="3">Beginner/rusty level</meter>
+									<div><abbr title="Externsible stylesheet language transformations">XSLT</abbr></div>
+								</li>
+								<li><button data-type="readMoreButton" data-context="softwareLanguageList">Read more</button></li>
+							</ul>
+						</div>
 					</li>
 					<li>
-						<meter min="0" max="3" value="3" low="1" optimum="3">Advanced level</meter>
-						<abbr title="Hyper text markup language">HTML</abbr>, <abbr title="Extensible hyper text markup language">XHTML</abbr>, and <abbr title="Extensible markup language">XML</abbr>
+						<h3 class="cbp_tmtime">Workflow</h3>
+						<div class="cbp_tmicon textIcon">!</div>
+						<div class="cbp_tmlabel">
+							<ul id="workflowList" class="skillsList">
+								<li>
+									<meter min="0" max="3" value="3" low="1" optimum="3">Advanced level</meter>
+									<div>Automated testing<span class="additionalInfo"> - PHPUnit, Selenium</span></div>
+								</li>
+								<li>
+									<meter min="0" max="3" value="3" low="1" optimum="3">Advanced level</meter>
+									<div>Build and deployment<span class="additionalInfo"> - Jenkins, Phing, Apache Ant</span></div>
+								</li>
+								<li>
+									<meter min="0" max="3" value="3" low="1" optimum="3">Advanced level</meter>
+									<div>Source control<span class="additionalInfo"> - Git (gitflow), <abbr title="Subversion">SVN</abbr>, Vault</span></div>
+								</li>
+								<li>
+									<meter min="0" max="3" value="3" low="1" optimum="3">Advanced level</meter>
+									<div>Profiling+Debugging<span class="additionalInfo"> - Xprofiler, Xdebug, Cache-grind</span></div>
+								</li>
+								<li>
+									<meter min="0" max="3" value="3" low="1" optimum="3">Advanced level</meter>
+									<div>Validation<span class="additionalInfo"> - <abbr title="World wide web consortium">W3C</abbr> HTML validator, Clover, Lint</span></div>
+								</li>
+								<li>
+									<meter min="0" max="3" value="2" low="1" optimum="3">Advanced level</meter>
+									<div>Graphical design<span class="additionalInfo"> - Paintshop, Photoshop</span></div>
+								</li>
+								<li>
+									<meter min="0" max="3" value="3" low="1" optimum="3">Advanced level</meter>
+									<div>Prototyping and <abbr title="user experience">UX</abbr>	 design<span class="additionalInfo"> - Moqups, Fireworks, OneNote</span></div>
+								</li>
+								<li>
+									<meter min="0" max="3" value="2" low="1" optimum="3">Advanced level</meter>
+									<div>Project management<span class="additionalInfo"> - Gemini</span></div>
+								</li>
+								<li>
+									<meter min="0" max="3" value="3" low="1" optimum="3">Advanced level</meter>
+									<div>Accessibility<span class="additionalInfo"> - <abbr title="Object oriented programming">WCAG</abbr>, JAWS screen reader</span></div>
+								</li>
+								<li>
+									<meter min="0" max="3" value="3" low="1" optimum="3">Advanced level</meter>
+									<div>Security<span class="additionalInfo"> - <abbr title="Cross-site scripting">XSS</abbr>, <abbr title="Cross-site request forgery">CSRF</abbr>, session hijacking, <abbr title="Structured query language">SQL</abbr> injection, header injection etc</span></div>
+								</li>
+								<li>
+									<meter min="0" max="3" value="3" low="1" optimum="3">Advanced level</meter>
+									<div>Agile development<span class="additionalInfo"> - Continuous integration, Scrum</span></div>
+								</li>
+								<li>
+									<meter min="0" max="3" value="3" low="1" optimum="3">Advanced level</meter>
+									<div>Design patterns<span class="additionalInfo"> - <abbr title="Object oriented programming">OOP</abbr>, <abbr title="Inversion of control">IOC</abbr>, <abbr title="Model view controller">MVC</abbr>, <abbr title="Dependency injection">DI</abbr>, functional programming etc</span></div>
+								</li>
+								<li>
+									<meter min="0" max="3" value="3" low="1" optimum="3">Advanced level</meter>
+									<div>Documentation<span class="additionalInfo"> - Media Wiki, markdown</span></div>
+								</li>
+								<li>
+									<meter min="0" max="3" value="32" low="1" optimum="3">Advanced level</meter>
+									<div><abbr title="Search engine optimsation">SEO</abbr><span class="additionalInfo"> - Semantic markup, Google analytics, Facebook &amp; Twitter campaigns</span></div>
+								</li>
+								<li>
+									<meter min="0" max="3" value="1" low="1" optimum="3">Beginner/rusty level</meter>
+									<div>Virtualisation<span class="additionalInfo"> - Vmware, Virtualbox, Docker</span></div>
+								</li>
+							</ul>
+						</div>
 					</li>
-					<li>
-						<meter min="0" max="3" value="3" low="1" optimum="3">Advanced level</meter>
-						<abbr title="Cascading style sheets">CSS</abbr>
-					</li>
-					<li>
-						<meter min="0" max="3" value="2" low="1" optimum="3">Intermediate-Advanced level</meter>
-						JavaScript
-					</li>
-					<li>
-						<meter min="0" max="3" value="3" low="1" optimum="3">Advanced level</meter>
-						MySQL
-					</li>
-					<li class="additionalInfo">
-						<meter min="0" max="3" value="2" low="1" optimum="3">Advanced level</meter>
-						<abbr title="Simple object access protocol">SOAP</abbr> and <abbr title="Web service definition layer">WSDL</abbr>
-					</li>
-					<li class="additionalInfo">
-						<meter min="0" max="3" value="2" low="1" optimum="3">Intermediate level</meter>
-						<abbr title="C Sharp">C#</abbr>
-					</li>
-					<li class="additionalInfo">
-						<meter min="0" max="3" value="2" low="1" optimum="3">Intermediate level</meter>
-						<abbr title="Microsoft SQL server">MSSQL</abbr>, SQLite
-					</li>
-					<li class="additionalInfo">
-						<meter min="0" max="3" value="2" low="1" optimum="3">Intermediate but rusty</meter>
-						Java
-					</li>
-					<li class="additionalInfo">
-						<meter min="0" max="3" value="1" low="1" optimum="3">Beginner/rusty level</meter>
-						<abbr title="C programming language">C</abbr>, <abbr title="C programming language">C++</abbr>
-					</li>
-					<li class="additionalInfo">
-						<meter min="0" max="3" value="1" low="1" optimum="3">Beginner/rusty level</meter>
-						<abbr title="Externsible stylesheet language transformations">XSLT</abbr>
-					</li>
-					<li><button data-type="readMoreButton" data-context="softwareLanguageList">Read more</button></li>
 				</ul>
 				<!-- <h3>Frameworks &amp; libraries</h3>
 				<ul>
@@ -198,69 +271,7 @@
 					<li><button data-type="readMoreButton" data-context="TODO">Read more</button></li>
 
 				</ul>-->
-				<h3>Workflow</h3>
-				<ul id="workflowList">
-					<li>
-						<meter min="0" max="3" value="3" low="1" optimum="3">Advanced level</meter>
-						Automated testing<span class="additionalInfo"> - PHPUnit, Selenium</span>
-					</li>
-					<li>
-						<meter min="0" max="3" value="3" low="1" optimum="3">Advanced level</meter>
-						Build and deployment<span class="additionalInfo"> - Jenkins, Phing, Apache Ant</span>
-					</li>
-					<li>
-						<meter min="0" max="3" value="3" low="1" optimum="3">Advanced level</meter>
-						Source control<span class="additionalInfo"> - Git (gitflow), <abbr title="Subversion">SVN</abbr>, Vault</span>
-					</li>
-					<li>
-						<meter min="0" max="3" value="3" low="1" optimum="3">Advanced level</meter>
-						Profiling+Debugging<span class="additionalInfo"> - Xprofiler, Xdebug, Cache-grind</span>
-					</li>
-					<li>
-						<meter min="0" max="3" value="3" low="1" optimum="3">Advanced level</meter>
-						Validation<span class="additionalInfo"> - <abbr title="World wide web consortium">W3C</abbr> HTML validator, Clover, Lint</span>
-					</li>
-					<li>
-						<meter min="0" max="3" value="2" low="1" optimum="3">Advanced level</meter>
-						Graphical design<span class="additionalInfo"> - Paintshop, Photoshop</span>
-					</li>
-					<li>
-						<meter min="0" max="3" value="3" low="1" optimum="3">Advanced level</meter>
-						Prototyping and <abbr title="user experience">UX</abbr>	 design<span class="additionalInfo"> - Moqups, Fireworks, OneNote</span>
-					</li>
-					<li>
-						<meter min="0" max="3" value="2" low="1" optimum="3">Advanced level</meter>
-						Project management<span class="additionalInfo"> - Gemini</span>
-					</li>
-					<li>
-						<meter min="0" max="3" value="3" low="1" optimum="3">Advanced level</meter>
-						Accessibility<span class="additionalInfo"> - <abbr title="Object oriented programming">WCAG</abbr>, JAWS screen reader</span>
-					</li>
-					<li>
-						<meter min="0" max="3" value="3" low="1" optimum="3">Advanced level</meter>
-						Security<span class="additionalInfo"> - <abbr title="Cross-site scripting">XSS</abbr>, <abbr title="Cross-site request forgery">CSRF</abbr>, session hijacking, <abbr title="Structured query language">SQL</abbr> injection, header injection etc</span>
-					</li>
-					<li>
-						<meter min="0" max="3" value="3" low="1" optimum="3">Advanced level</meter>
-						Agile development<span class="additionalInfo"> - Continuous integration, Scrum</span>
-					</li>
-					<li>
-						<meter min="0" max="3" value="3" low="1" optimum="3">Advanced level</meter>
-						Design patterns<span class="additionalInfo"> - <abbr title="Object oriented programming">OOP</abbr>, <abbr title="Inversion of control">IOC</abbr>, <abbr title="Model view controller">MVC</abbr>, <abbr title="Dependency injection">DI</abbr>, functional programming etc</span>
-					</li>
-					<li>
-						<meter min="0" max="3" value="3" low="1" optimum="3">Advanced level</meter>
-						Documentation<span class="additionalInfo"> - Media Wiki, markdown</span>
-					</li>
-					<li>
-						<meter min="0" max="3" value="32" low="1" optimum="3">Advanced level</meter>
-						<abbr title="Search engine optimsation">SEO</abbr><span class="additionalInfo"> - Semantic markup, Google analytics, Facebook &amp; Twitter campaigns</span>
-					</li>
-					<li>
-						<meter min="0" max="3" value="1" low="1" optimum="3">Beginner/rusty level</meter>
-						Virtualisation<span class="additionalInfo"> - Vmware, Virtualbox, Docker</span>
-					</li>
-				</ul>
+
 				<h2>Hobbies &amp; interests</h2>
 				<ul>
 					<li>Formula 1</li>

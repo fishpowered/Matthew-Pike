@@ -1,18 +1,34 @@
 /* -- Main stylesheet, by Matt Pike, 2017 -- */
-body{font-family: 'Raleway', sans-serif; line-height:200%}
-/*h1,h2,h3,h4,h5,h6{font-family: 'Josefin Sans', sans-serif; color:red;}*/
 main{padding:0 2em;}
-aside{background:#f5f5f5; padding:0 2em;}
+h2{color:#ccc; border-bottom:1px solid #eee}
+main p{color:#999}
 .additionalInfo{/*display:none; JS should be used to hide "read more" content by default so it is visible in the event JS is disabled */}
 .pure-g{letter-spacing:0.05em}
 .cbp_tmtimeline > li .cbp_tmlabel{padding:0.1px 2em;}
 h1{color:#ee856c}
-main h2{color:#ccc; border-bottom:1px solid #eee}
-main p{color:#999}
 button{text-align:left; border:0; background:none; padding:0; border-bottom:2px dashed #bad5e4;}
+
+/* -- Side bar -- */
+aside{padding:0 2em;}
+aside h3{margin-bottom:1em; color:#4bb5f1; font-weight:normal; padding-bottom:0!important;}
+aside ul.skillsList{list-style:none; padding-left:0; margin-left:0}
+aside ul.skillsList meter{width:10%; margin-right:2%; display:inline-block; vertical-align:top; line-height:1.5em; margin-top:3px}
+aside ul.skillsList div{width:85%; display:inline-block; vertical-align:top}
+aside ul.skillsList li{margin-bottom:0.2em}
+aside .cbp_tmtimeline > li{margin-top:2.5em}
+aside .cbp_tmtimeline:before{display:none;}
+aside .cbp_tmtimeline > li .cbp_tmtime{width:100%; position:relative; padding:0 0 20px 0;}
+aside .cbp_tmtimeline > li .cbp_tmtime span{text-align:left;}
+aside .cbp_tmtimeline > li .cbp_tmlabel,aside .cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel{margin:0 0 30px 0; padding:1em; font-weight:400; font-size:0.9em; line-height:1.5em; background-color:#f5f5f5; color:#888;}
+aside .cbp_tmtimeline > li .cbp_tmlabel:after{right:auto; left:20px; border-right-color:transparent; border-bottom-color:#f5f5f5; top:-20px;}
+aside .cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel:after{border-right-color:transparent; border-bottom-color:#f5f5f5;}
+aside .cbp_tmtimeline > li .cbp_tmicon{position:relative; float:right; left:auto; margin:-55px 5px 0 0px; background:#999; box-shadow:0 0 0 8px #f5f5f5;}
+aside address{text-align:center; margin:2em 0; color:#aaa;}
+aside address a{color:#aaa; font-style:normal}
+aside address a:hover{color:#777; border-bottom:2px dashed #bad5e4}
 
 /* -- Tweaks to VerticalTimeline CSS -- */
 .cbp_tmlabel p{color:white}
 .cbp_tmtimeline > li .cbp_tmicon{top:initial}
 .cbp_tmtimeline > li > button {margin: 0 0 15px 25%;}
-.cbp_tmtimeline > li.readMoreListItem .cbp_tmicon{cursor:pointer; font-size:22px; font-weight: bold; line-height: 35px;}
+.cbp_tmtimeline > li .textIcon{font-size:21px; font-weight:bold; line-height:40px; font-family: sans-serif, monospace;}
