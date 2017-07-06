@@ -1,12 +1,24 @@
 /* -- Main stylesheet, by Matt Pike, 2017 -- */
 main{padding:0 2em;}
-h2{color:#ccc; border-bottom:1px solid #eee}
 main p{color:#999}
+h1{color:#ee856c}
+h2{color:#ccc; border-bottom:1px solid #eee}
+abbr{text-decoration:none}
+abbr[title]{border-bottom: 1px dotted #ccc}
+button{text-align:left; border:0; background:none; padding:0; border-bottom:2px dashed #bad5e4;}
+main .cbp_tmlabel h3{font-size:1em; margin:0.8em 0}
+main .cbp_tmlabel>ul{padding-left:1em; list-style-type:square; margin:0.5em 0; font-size:0.8em; padding-bottom:0.1em}
+main .cbp_tmlabel ul ul{padding-left:2em; font-size:0.9em; margin:1em 0;}
+main .cbp_tmlabel ul li{margin-bottom:0.5em}
 .additionalInfo{/*display:none; JS should be used to hide "read more" content by default so it is visible in the event JS is disabled */}
 .pure-g{letter-spacing:0.05em}
-.cbp_tmtimeline > li .cbp_tmlabel{padding:0.1px 2em;}
-h1{color:#ee856c}
-button{text-align:left; border:0; background:none; padding:0; border-bottom:2px dashed #bad5e4;}
+.pure-g > div{-webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box}
+.cbp_tmtimeline > li .cbp_tmlabel{padding:0.1px 2em;/* don't use overflow:hidden instead of padding 0.1 because then the container arrow will disappear */}
+.cbp_tmlabel p{color:white}
+.cbp_tmtimeline > li .cbp_tmicon{top:initial}
+.cbp_tmtimeline > li > button {margin:0.8em 0 15px 26%;}
+.cbp_tmtimeline > li .textIcon{font-size:21px; font-weight:bold; line-height:40px; font-family: sans-serif, monospace;}
+.cbp_tmtimeline > li .cbp_tmlabel:after {right:99.9%}
 
 /* -- Side bar -- */
 aside{padding:0 2em;}
@@ -27,8 +39,11 @@ aside address{text-align:center; margin:2em 0; color:#aaa;}
 aside address a{color:#aaa; font-style:normal}
 aside address a:hover{color:#777; border-bottom:2px dashed #bad5e4}
 
-/* -- Tweaks to VerticalTimeline CSS -- */
-.cbp_tmlabel p{color:white}
-.cbp_tmtimeline > li .cbp_tmicon{top:initial}
-.cbp_tmtimeline > li > button {margin: 0 0 15px 25%;}
-.cbp_tmtimeline > li .textIcon{font-size:21px; font-weight:bold; line-height:40px; font-family: sans-serif, monospace;}
+/* -- Layout when collapsed vertically -- */
+@media only screen and (max-width: 756px){
+    aside.pure-u-md-2-5{width:100%}
+    .cbp_tmtimeline > li{margin-top:2.5em}
+    .cbp_tmtimeline > li.readMoreListItem{margin-top:0; margin-bottom:2em}
+    .cbp_tmtimeline > li > button{margin:0;}
+    main .cbp_tmtimeline li.readMoreListItem .cbp_tmicon{display:none}
+}
