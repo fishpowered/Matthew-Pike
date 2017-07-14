@@ -40,7 +40,7 @@ aside address a{color:#aaa; font-style:normal}
 aside address a:hover{color:#777; border-bottom:2px dashed #bad5e4}
 
 /* -- Layout when collapsed vertically -- */
-@media only screen and (max-width: 756px){
+@media only screen and (max-width: 767px){
     aside.pure-u-md-2-5{width:100%}
     .cbp_tmtimeline > li{margin-top:2.5em}
     .cbp_tmtimeline > li.readMoreListItem{margin-top:0; margin-bottom:2em}

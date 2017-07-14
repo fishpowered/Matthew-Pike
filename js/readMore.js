@@ -10,12 +10,20 @@ function initReadMoreToggles() {
 		var button = $(this);
 		if (target.data("isOpen")) {
 			target.data("isOpen", false);
-			$(targetId + ' > .additionalInfo').fadeOut(250);
-			button.text(button.text().replace("Read less", "Read more"));
+			if($(this).data("searchchildren")){
+				$(targetId).find('.additionalInfo').fadeOut(250);
+			}else{
+				$(targetId + ' > .additionalInfo').fadeOut(250);
+			}
+			button.text(button.text().replace("less", "more"));
 		} else {
 			target.data("isOpen", true);
-			$(targetId + ' > .additionalInfo').fadeIn(250);
-			button.text(button.text().replace("Read more", "Read less"));
+			if($(this).data("searchchildren")) {
+				$(targetId).find('.additionalInfo').fadeIn(250);
+			}else{
+				$(targetId + ' > .additionalInfo').fadeIn(250);
+			}
+			button.text(button.text().replace("more", "less"));
 		}
 		target.focus();
 	});
