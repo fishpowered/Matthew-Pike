@@ -148,18 +148,6 @@ class SalaryConceptWorkRises extends SalaryConcept {
 	 * Generate the TimeSpanWorkRiseActive and TimeSpanWorkRise spans (see class phpdoc for more info)
 	 *
 	 * @return void
-	 * @throws BadMethodCallException
-	 * @throws BadRequestException
-	 * @throws FunctionalityNotImplementedYetException
-	 * @throws InvalidArgumentException
-	 * @throws LogicException
-	 * @throws PDOException
-	 * @throws QueryException
-	 * @throws RuntimeException
-	 * @throws SdsqlQueryException
-	 * @throws SecurityException
-	 * @throws SetupException
-	 * @throws UserInputException
 	 */
 	protected function process(): void {
 		// Build the TimeSpan's to represent when the work rise is active (we need to ask the previous and next days for their settings in case they overlap the current day)

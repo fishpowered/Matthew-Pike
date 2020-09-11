@@ -4,6 +4,7 @@
 function initReadMoreToggles() {
 	$('.additionalInfo').hide();
 	$('button[data-type=readMoreButton],a[data-type=readMoreButton]').click(function (e) {
+		// TODO Add aria accessibility attributes!
 		e.preventDefault();
 		var targetId = '#' + $(this).data('context');
 		var target = $(targetId);

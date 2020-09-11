@@ -63,7 +63,7 @@ class SalaryConceptWorkRisesTest extends TestCase {
 	 */
 	public function testWorkRiseEarnedTwiceFromLunchDuringOvertimeBug(): void {
 		
-		$user = $this->userRepository->selectUserByUserId(10691); // Teemu Tapiala, Heimon Kala
+		$user = $this->userRepository->selectUserByUserId(10691);
 		$activityCustomPeriod = new ActivityCustomPeriod(null, $user);
 		$activityDay = $activityCustomPeriod->getActivityDay('2013-04-19');
 		
@@ -78,7 +78,7 @@ class SalaryConceptWorkRisesTest extends TestCase {
 	 */
 	public function testWorkRiseNotEarnedDuringOvertimeWhenConfiguredNotTo(): void {
 	
-		$user = $this->userRepository->selectUserByUserId(20573); // Pirjo Suomalainen, Suomen Sydänliitto
+		$user = $this->userRepository->selectUserByUserId(20573);
 		$activityCustomPeriod = new ActivityCustomPeriod(null, $user);
 		$activityDay = $activityCustomPeriod->getActivityDay('2013-04-19');
 	
@@ -93,7 +93,7 @@ class SalaryConceptWorkRisesTest extends TestCase {
 	 */
 	public function testNEPDEV_5445(): void {
 	
-		$user = $this->userRepository->selectUserByUserId(10687); // Jarmo Partio, Heimon Kala
+		$user = $this->userRepository->selectUserByUserId(10687);
 		$activityCustomPeriod = new ActivityCustomPeriod(null, $user);
 		$activityDay = $activityCustomPeriod->getActivityDay('2012-06-17');
 	
@@ -109,7 +109,7 @@ class SalaryConceptWorkRisesTest extends TestCase {
 	 */
 	public function testNEPDEV_7621(): void {
 		
-		$user = $this->userRepository->selectUserByUserId(8926); // Telatek Service Oy
+		$user = $this->userRepository->selectUserByUserId(8926);
 		$activityCustomPeriod = new ActivityCustomPeriod(null, $user);
 		$activityDay = $activityCustomPeriod->getActivityDay('2013-08-08');
 	
@@ -126,7 +126,7 @@ class SalaryConceptWorkRisesTest extends TestCase {
 	 * @return void
 	 */
 	public function testNEPDEV_2980(): void {
-		$user = $this->userRepository->selectUserByUserId(17997); // 7552 Unittest - UT_Vanilla
+		$user = $this->userRepository->selectUserByUserId(17997);
 		$activityCustomPeriod = new ActivityCustomPeriod(null, $user);
 		// Earn work rise from assumed lunch = N
 		$activityDay = $activityCustomPeriod->getActivityDay('2013-01-28');
@@ -146,7 +146,7 @@ class SalaryConceptWorkRisesTest extends TestCase {
 	 * @return void
 	 */
 	public function testNEPDEV_8359(): void {
-		$user = $this->userRepository->selectUserByUserId(17997); // 7552 Unittest - UT_Vanilla
+		$user = $this->userRepository->selectUserByUserId(17997);
 		$activityCustomPeriod = new ActivityCustomPeriod(null, $user);
 		$activityDay = $activityCustomPeriod->getActivityDay('2013-05-27');
 		$this->assertEquals(6 * 3600, $activityDay->getTimeSpanCollection()->durationInSecondsByTimeSpanClassTypeWithInclusiveAndExclusiveParams(TimeSpanWorkRise::class, ['number' => 1]));
@@ -159,7 +159,7 @@ class SalaryConceptWorkRisesTest extends TestCase {
 	 * @return void
 	 */
 	public function testNEPDEV_8634(): void {
-		$user = $this->userRepository->selectUserByUserId(17997); // 7552 Unittest - UT_Vanilla
+		$user = $this->userRepository->selectUserByUserId(17997);
 		$activityCustomPeriod = new ActivityCustomPeriod(null, $user);
 		$activityDay = $activityCustomPeriod->getActivityDay('2013-08-05');
 		$this->assertEquals(0, $activityDay->getTimeSpanCollection()->durationInSecondsByTimeSpanClassTypeWithInclusiveAndExclusiveParams(TimeSpanWorkRise::class, ['number' => 2]));
@@ -171,7 +171,7 @@ class SalaryConceptWorkRisesTest extends TestCase {
 	 * @return void
 	 */
 	public function test_targetedToInmade(): void {
-		$user = $this->userRepository->selectUserByUserId(17997); // 7552 Unittest - UT_Vanilla
+		$user = $this->userRepository->selectUserByUserId(17997);
 		$activityCustomPeriod = new ActivityCustomPeriod(null, $user);
 		$activityDay = $activityCustomPeriod->getActivityDay('2013-11-11');
 		$this->assertEquals(1.75 * 3600, $activityDay->getTimeSpanCollection()->durationInSecondsByTimeSpanClassTypeWithInclusiveAndExclusiveParams(TimeSpanWorkRise::class, ['number' => 2]));
@@ -184,7 +184,7 @@ class SalaryConceptWorkRisesTest extends TestCase {
 	 */
 	public function testWorkRiseNotEarnedAfterThreshold(): void {
 		// Aamutuntikorvaus earned from 00 - 06 but they only want it earned if the user starts work before 05:40. User starts at 05:43 so nothing should be earned
-		$user = $this->userRepository->selectUserByUserId(10830); // Riitta Sulkama, Nokian Panimo
+		$user = $this->userRepository->selectUserByUserId(10830);
 		$activityCustomPeriod = new ActivityCustomPeriod(null, $user);
 		$activityDay = $activityCustomPeriod->getActivityDay('2015-02-03');
 		$this->assertEquals(0, $activityDay->getTimeSpanCollection()->durationInSecondsByTimeSpanClassTypeWithInclusiveAndExclusiveParams(TimeSpanWorkRise::class, ['number' => 1]));
